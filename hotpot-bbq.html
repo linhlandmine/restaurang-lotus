@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotpot & BBQ - Restaurang Lotus</title>
+  <meta name="description" content="Hotpot och koreansk BBQ på Restaurang Lotus. Interaktiv matupplevelse vid bordet.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lotus: {
+              red: '#c41e3a',
+              gold: '#d4af37',
+              dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-2xl font-bold text-lotus-red">Restaurang Lotus</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-lotus-red transition">Hem</a>
+          <a href="menu.html" class="hover:text-lotus-red transition">Meny</a>
+          <a href="buffet.html" class="hover:text-lotus-red transition">Buffé</a>
+          <a href="hotpot-bbq.html" class="text-lotus-red font-medium">Hotpot & BBQ</a>
+          <a href="contact.html" class="hover:text-lotus-red transition">Kontakt</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="index.html" class="block py-2 hover:text-lotus-red">Hem</a>
+        <a href="menu.html" class="block py-2 hover:text-lotus-red">Meny</a>
+        <a href="buffet.html" class="block py-2 hover:text-lotus-red">Buffé</a>
+        <a href="hotpot-bbq.html" class="block py-2 text-lotus-red font-medium">Hotpot & BBQ</a>
+        <a href="contact.html" class="block py-2 hover:text-lotus-red">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-gradient-to-r from-lotus-red to-red-700 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-2">Hotpot & BBQ</h1>
+      <p class="opacity-90">Interaktiv matupplevelse - laga din egen mat vid bordet</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-lg text-gray-600">Upplev konsten av interaktiv matlagning. Välj dina ingredienser och laga dem till perfektion i den bubblande grytan eller på grillen vid ditt bord.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="pb-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Hotpot -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-br from-orange-500 to-red-600 p-6 text-center text-white">
+            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+            </svg>
+            <h2 class="text-2xl font-bold">Hotpot</h2>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen (eat all you can)</span>
+                <span class="font-bold text-lotus-red">249 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">149 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <h3 class="font-semibold mb-2">Buljonger:</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Original - Klar buljong</li>
+                <li>• Sichuan - Stark & kryddig</li>
+                <li>• Tom Yum - Thailändsk sursöt</li>
+                <li>• Svamp - Vegetarisk umami</li>
+                <li>• Delad gryta - Två buljonger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BBQ -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-br from-amber-500 to-orange-600 p-6 text-center text-white">
+            <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+            </svg>
+            <h2 class="text-2xl font-bold">Koreansk BBQ</h2>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen (eat all you can)</span>
+                <span class="font-bold text-lotus-red">269 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">159 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <p class="text-sm text-gray-600">Grilla ditt eget kött och grönsaker på bordsgrillen. Marinerat kött, färska skaldjur och krispiga grönsaker.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combo -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-lotus-gold">
+          <div class="bg-gradient-to-br from-lotus-gold to-yellow-500 p-6 text-center text-lotus-dark">
+            <span class="bg-lotus-red text-white text-xs font-bold px-3 py-1 rounded-full">BÄSTA VAL</span>
+            <h2 class="text-2xl font-bold mt-2">Hotpot + BBQ</h2>
+            <p class="text-sm opacity-80">Kombinera båda!</p>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen (eat all you can)</span>
+                <span class="font-bold text-lotus-red">299 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">179 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <p class="text-sm text-gray-600">Kan du inte bestämma dig? Få både hotpot och BBQ för den ultimata upplevelsen!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="bg-lotus-dark text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Vad ingår?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-gold mb-4">Kött</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>• Tunt skivad nötfärs</li>
+            <li>• Fläskkarré</li>
+            <li>• Lamm</li>
+            <li>• Kyckling</li>
+            <li>• Köttbullar</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-gold mb-4">Skaldjur</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>• Räkor</li>
+            <li>• Fiskbollar</li>
+            <li>• Bläckfisk</li>
+            <li>• Musslor</li>
+            <li>• Fiskfilé</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-gold mb-4">Grönsaker & Mer</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>• Pak choi</li>
+            <li>• Svamp (shiitake, enoki)</li>
+            <li>• Tofu varianter</li>
+            <li>• Kinakål</li>
+            <li>• Böngroddar</li>
+            <li>• Nudlar (glasnudlar, udon)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-gold mb-4">Såser</h3>
+          <p class="text-gray-300 mb-3">Skapa din egen dippsås:</p>
+          <ul class="space-y-2 text-gray-300">
+            <li>• Sesamsmör</li>
+            <li>• Sojasås</li>
+            <li>• Chiliolja</li>
+            <li>• Vitlök</li>
+            <li>• Koriander</li>
+            <li>• Salladslök</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+        <h2 class="text-2xl font-bold text-lotus-dark mb-4">Bokning Rekommenderas</h2>
+        <p class="text-gray-600 mb-6">Hotpot & BBQ-bord är begränsade. Vi rekommenderar att boka i förväg, särskilt för helger.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="tel:+46XXXXXXXXX" class="inline-flex items-center justify-center bg-lotus-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            Ring & Boka
+          </a>
+          <a href="contact.html" class="inline-flex items-center justify-center bg-lotus-gold text-lotus-dark px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">
+            Kontaktinfo
+          </a>
+        </div>
+        <p class="text-sm text-gray-500 mt-6">Tidsgräns: 2 timmar per sittning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Note -->
+  <section class="pb-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-500 italic">Priserna är exempel - uppdatera med era faktiska priser.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-lotus-gold font-semibold text-lg mb-4 md:mb-0">Restaurang Lotus</p>
+        <div class="flex space-x-6">
+          <a href="index.html" class="hover:text-white transition">Hem</a>
+          <a href="menu.html" class="hover:text-white transition">Meny</a>
+          <a href="buffet.html" class="hover:text-white transition">Buffé</a>
+          <a href="contact.html" class="hover:text-white transition">Kontakt</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+        <p>&copy; 2024 Restaurang Lotus. Välkommen!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

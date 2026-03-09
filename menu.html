@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takeaway Meny - Restaurang Lotus</title>
+  <meta name="description" content="Takeaway meny från Restaurang Lotus. Beställ asiatisk mat för avhämtning.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lotus: {
+              red: '#c41e3a',
+              gold: '#d4af37',
+              dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-2xl font-bold text-lotus-red">Restaurang Lotus</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-lotus-red transition">Hem</a>
+          <a href="menu.html" class="text-lotus-red font-medium">Meny</a>
+          <a href="buffet.html" class="hover:text-lotus-red transition">Buffé</a>
+          <a href="hotpot-bbq.html" class="hover:text-lotus-red transition">Hotpot & BBQ</a>
+          <a href="contact.html" class="hover:text-lotus-red transition">Kontakt</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="index.html" class="block py-2 hover:text-lotus-red">Hem</a>
+        <a href="menu.html" class="block py-2 text-lotus-red font-medium">Meny</a>
+        <a href="buffet.html" class="block py-2 hover:text-lotus-red">Buffé</a>
+        <a href="hotpot-bbq.html" class="block py-2 hover:text-lotus-red">Hotpot & BBQ</a>
+        <a href="contact.html" class="block py-2 hover:text-lotus-red">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-gradient-to-r from-lotus-red to-red-700 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-2">Takeaway Meny</h1>
+      <p class="opacity-90">Ring och beställ eller besök oss för avhämtning</p>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+
+      <!-- Appetizers -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Förrätter</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-semibold">Vårrullar (4 st)</h3>
+              <p class="text-gray-600 text-sm">Krispiga grönsaksvårrullar</p>
+            </div>
+            <span class="font-bold text-lotus-red">49 kr</span>
+          </div>
+          <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-semibold">Dumplings (6 st)</h3>
+              <p class="text-gray-600 text-sm">Ångkokta eller stekta</p>
+            </div>
+            <span class="font-bold text-lotus-red">59 kr</span>
+          </div>
+          <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-semibold">Wontonsoppa</h3>
+              <p class="text-gray-600 text-sm">Traditionell buljong med wontons</p>
+            </div>
+            <span class="font-bold text-lotus-red">55 kr</span>
+          </div>
+          <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-semibold">Edamame</h3>
+              <p class="text-gray-600 text-sm">Ångkokta sojabönor med havssalt</p>
+            </div>
+            <span class="font-bold text-lotus-red">39 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chicken -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Kyckling</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Kung Pao Kyckling</span>
+            <span class="font-bold text-lotus-red">115 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Sötsur Kyckling</span>
+            <span class="font-bold text-lotus-red">115 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Kyckling med Cashewnötter</span>
+            <span class="font-bold text-lotus-red">119 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Teriyaki Kyckling</span>
+            <span class="font-bold text-lotus-red">115 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beef -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Nötkött</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Biff med Broccoli</span>
+            <span class="font-bold text-lotus-red">125 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Mongolisk Biff</span>
+            <span class="font-bold text-lotus-red">129 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Svartpeppar Biff</span>
+            <span class="font-bold text-lotus-red">125 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Biff med Ostronsås</span>
+            <span class="font-bold text-lotus-red">125 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pork -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Fläsk</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Sötsurt Fläsk</span>
+            <span class="font-bold text-lotus-red">115 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Twice Cooked Pork</span>
+            <span class="font-bold text-lotus-red">119 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Char Siu (BBQ Fläsk)</span>
+            <span class="font-bold text-lotus-red">119 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seafood -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Skaldjur</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Salt & Peppar Räkor</span>
+            <span class="font-bold text-lotus-red">139 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Vitlöksräkor</span>
+            <span class="font-bold text-lotus-red">145 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Fiskfilé i Svartbönsås</span>
+            <span class="font-bold text-lotus-red">135 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Blandade Skaldjur med Grönsaker</span>
+            <span class="font-bold text-lotus-red">155 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vegetarian -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Vegetariskt</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Mapo Tofu</span>
+            <span class="font-bold text-lotus-red">99 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Wokade Grönsaker</span>
+            <span class="font-bold text-lotus-red">95 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Buddha's Delight</span>
+            <span class="font-bold text-lotus-red">105 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Tofu med Svamp</span>
+            <span class="font-bold text-lotus-red">99 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rice & Noodles -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Ris & Nudlar</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Stekt Ris (Kyckling/Fläsk/Biff/Räkor)</span>
+            <span class="font-bold text-lotus-red">99-115 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Ångkokt Ris</span>
+            <span class="font-bold text-lotus-red">20 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Chow Mein</span>
+            <span class="font-bold text-lotus-red">99 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Pad Thai</span>
+            <span class="font-bold text-lotus-red">109 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Singapore Nudlar</span>
+            <span class="font-bold text-lotus-red">109 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beverages -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-lotus-red mb-6 pb-2 border-b-2 border-lotus-gold">Drycker</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Läsk</span>
+            <span class="font-bold text-lotus-red">25 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Jasminte</span>
+            <span class="font-bold text-lotus-red">30 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Öl</span>
+            <span class="font-bold text-lotus-red">49 kr</span>
+          </div>
+          <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm">
+            <span class="font-semibold">Husets Vin (glas)</span>
+            <span class="font-bold text-lotus-red">69 kr</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-500 italic">Priserna är exempel - uppdatera med era faktiska priser</p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-lotus-gold font-semibold text-lg mb-4 md:mb-0">Restaurang Lotus</p>
+        <div class="flex space-x-6">
+          <a href="index.html" class="hover:text-white transition">Hem</a>
+          <a href="menu.html" class="hover:text-white transition">Meny</a>
+          <a href="buffet.html" class="hover:text-white transition">Buffé</a>
+          <a href="contact.html" class="hover:text-white transition">Kontakt</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+        <p>&copy; 2024 Restaurang Lotus. Välkommen!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

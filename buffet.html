@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffé - Restaurang Lotus</title>
+  <meta name="description" content="Lunchbuffé och kvällsbuffé på Restaurang Lotus. Generöst utbud av asiatiska rätter.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lotus: {
+              red: '#c41e3a',
+              gold: '#d4af37',
+              dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-2xl font-bold text-lotus-red">Restaurang Lotus</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-lotus-red transition">Hem</a>
+          <a href="menu.html" class="hover:text-lotus-red transition">Meny</a>
+          <a href="buffet.html" class="text-lotus-red font-medium">Buffé</a>
+          <a href="hotpot-bbq.html" class="hover:text-lotus-red transition">Hotpot & BBQ</a>
+          <a href="contact.html" class="hover:text-lotus-red transition">Kontakt</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="index.html" class="block py-2 hover:text-lotus-red">Hem</a>
+        <a href="menu.html" class="block py-2 hover:text-lotus-red">Meny</a>
+        <a href="buffet.html" class="block py-2 text-lotus-red font-medium">Buffé</a>
+        <a href="hotpot-bbq.html" class="block py-2 hover:text-lotus-red">Hotpot & BBQ</a>
+        <a href="contact.html" class="block py-2 hover:text-lotus-red">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-gradient-to-r from-lotus-red to-red-700 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-2">Buffé</h1>
+      <p class="opacity-90">Generöst asiatiskt bufféutbud med färska rätter</p>
+    </div>
+  </section>
+
+  <!-- Buffet Options -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Lunch Buffé -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-lotus-gold p-6 text-center">
+            <h2 class="text-2xl font-bold text-lotus-dark">Lunch Buffé</h2>
+            <p class="text-lotus-dark opacity-80">Tisdag - Fredag</p>
+            <p class="text-sm text-lotus-dark opacity-70">11:00 - 14:30</p>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen</span>
+                <span class="font-bold text-lotus-red">129 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Senior (65+)</span>
+                <span class="font-bold text-lotus-red">109 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">79 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <h3 class="font-semibold mb-2">Ingår:</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Dagens soppa</li>
+                <li>• Salladsbord</li>
+                <li>• 15+ varma rätter</li>
+                <li>• Ris & nudlar</li>
+                <li>• Läsk</li>
+                <li>• Kaffe/te</li>
+                <li>• Dessert</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evening Buffé -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-lotus-red">
+          <div class="bg-lotus-red p-6 text-center text-white">
+            <span class="bg-lotus-gold text-lotus-dark text-xs font-bold px-3 py-1 rounded-full">POPULÄR</span>
+            <h2 class="text-2xl font-bold mt-2">Kvälls Buffé</h2>
+            <p class="opacity-90">Tisdag - Söndag</p>
+            <p class="text-sm opacity-80">Från 17:00</p>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen</span>
+                <span class="font-bold text-lotus-red">199 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Senior (65+)</span>
+                <span class="font-bold text-lotus-red">169 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">119 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <h3 class="font-semibold mb-2">Allt från lunchbuffén, plus:</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Premium skaldjur</li>
+                <li>• Sushi & sashimi</li>
+                <li>• Utökat dessertbord</li>
+                <li>• Specialrätter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weekend Buffé -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-lotus-dark p-6 text-center text-white">
+            <h2 class="text-2xl font-bold">Helg Buffé</h2>
+            <p class="opacity-90">Lördag - Söndag</p>
+            <p class="text-sm opacity-80">12:00 - 16:00</p>
+          </div>
+          <div class="p-6">
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span>Vuxen</span>
+                <span class="font-bold text-lotus-red">159 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (6-12 år)</span>
+                <span class="font-bold text-lotus-red">99 kr</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Barn (under 6)</span>
+                <span class="font-bold text-green-600">Gratis</span>
+              </div>
+            </div>
+            <div class="border-t pt-4">
+              <h3 class="font-semibold mb-2">Perfekt för familjen</h3>
+              <p class="text-sm text-gray-600">Kombinerar lunchens utbud med extra helgrätter</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's on the Buffet -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-lotus-dark">Vad finns på buffén?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-red mb-4">Förrätter & Sallader</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Färsk salladsbord</li>
+            <li>• Vårrullar</li>
+            <li>• Dumplings</li>
+            <li>• Wontonsoppa</li>
+            <li>• Edamame</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-red mb-4">Varmrätter</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Sötsura rätter</li>
+            <li>• Wokade grönsaker</li>
+            <li>• Curryrätter</li>
+            <li>• Nudelrätter</li>
+            <li>• Stekt ris</li>
+            <li>• Ångkokt ris</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-red mb-4">Skaldjur (Kväll)</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Vitlöksräkor</li>
+            <li>• Salt & peppar bläckfisk</li>
+            <li>• Fiskrätter</li>
+            <li>• Sushiutbud</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-lotus-red mb-4">Desserter</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Färsk frukt</li>
+            <li>• Glass</li>
+            <li>• Asiatiska desserter</li>
+            <li>• Kakor & godsaker</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Note -->
+  <section class="py-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-500 italic">Menyn varierar dagligen. Priserna är exempel - uppdatera med era faktiska priser.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-lotus-gold font-semibold text-lg mb-4 md:mb-0">Restaurang Lotus</p>
+        <div class="flex space-x-6">
+          <a href="index.html" class="hover:text-white transition">Hem</a>
+          <a href="menu.html" class="hover:text-white transition">Meny</a>
+          <a href="buffet.html" class="hover:text-white transition">Buffé</a>
+          <a href="contact.html" class="hover:text-white transition">Kontakt</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+        <p>&copy; 2024 Restaurang Lotus. Välkommen!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurang Lotus - Autentisk Asiatisk Mat</title>
+  <meta name="description" content="Restaurang Lotus - Buffé, Hotpot, BBQ & Takeaway. Autentisk asiatisk mat i Sverige.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lotus: {
+              red: '#c41e3a',
+              gold: '#d4af37',
+              dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-2xl font-bold text-lotus-red">Restaurang Lotus</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-lotus-red font-medium">Hem</a>
+          <a href="menu.html" class="hover:text-lotus-red transition">Meny</a>
+          <a href="buffet.html" class="hover:text-lotus-red transition">Buffé</a>
+          <a href="hotpot-bbq.html" class="hover:text-lotus-red transition">Hotpot & BBQ</a>
+          <a href="contact.html" class="hover:text-lotus-red transition">Kontakt</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="index.html" class="block py-2 text-lotus-red font-medium">Hem</a>
+        <a href="menu.html" class="block py-2 hover:text-lotus-red">Meny</a>
+        <a href="buffet.html" class="block py-2 hover:text-lotus-red">Buffé</a>
+        <a href="hotpot-bbq.html" class="block py-2 hover:text-lotus-red">Hotpot & BBQ</a>
+        <a href="contact.html" class="block py-2 hover:text-lotus-red">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-lotus-red to-red-700 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Restaurang Lotus</h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">Autentisk Asiatisk Mat</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="buffet.html" class="bg-lotus-gold text-lotus-dark px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">Se Buffé</a>
+        <a href="menu.html" class="bg-white text-lotus-red px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Takeaway Meny</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-lotus-dark">Vad Vi Erbjuder</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Lunch Buffé -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-lotus-red rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Lunch Buffé</h3>
+          <p class="text-gray-600 mb-4">Generös lunchbuffé med ett brett utbud av asiatiska rätter.</p>
+          <a href="buffet.html" class="text-lotus-red font-medium hover:text-lotus-gold">Läs mer &rarr;</a>
+        </div>
+
+        <!-- Kvälls Buffé -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-lotus-gold rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-lotus-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Kvälls Buffé</h3>
+          <p class="text-gray-600 mb-4">Utökat kvällsutbud med premium rätter och skaldjur.</p>
+          <a href="buffet.html" class="text-lotus-red font-medium hover:text-lotus-gold">Läs mer &rarr;</a>
+        </div>
+
+        <!-- Hotpot & BBQ -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-lotus-red rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Hotpot & BBQ</h3>
+          <p class="text-gray-600 mb-4">Interaktiv matupplevelse - laga din egen mat vid bordet.</p>
+          <a href="hotpot-bbq.html" class="text-lotus-red font-medium hover:text-lotus-gold">Läs mer &rarr;</a>
+        </div>
+
+        <!-- Takeaway -->
+        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-lotus-gold rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-lotus-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Takeaway</h3>
+          <p class="text-gray-600 mb-4">Kan du inte stanna? Ta med vår goda mat hem.</p>
+          <a href="menu.html" class="text-lotus-red font-medium hover:text-lotus-gold">Se meny &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening Hours -->
+  <section class="bg-lotus-dark text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Öppettider</h2>
+      <div class="max-w-md mx-auto">
+        <div class="space-y-3">
+          <div class="flex justify-between py-2 border-b border-gray-700">
+            <span>Måndag</span>
+            <span class="text-gray-400">STÄNGT</span>
+          </div>
+          <div class="flex justify-between py-2 border-b border-gray-700">
+            <span>Tisdag - Torsdag</span>
+            <span>11:00 - 21:00</span>
+          </div>
+          <div class="flex justify-between py-2 border-b border-gray-700">
+            <span>Fredag</span>
+            <span>11:00 - 22:00</span>
+          </div>
+          <div class="flex justify-between py-2 border-b border-gray-700">
+            <span>Lördag</span>
+            <span>12:00 - 22:00</span>
+          </div>
+          <div class="flex justify-between py-2">
+            <span>Söndag</span>
+            <span>12:00 - 20:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-lotus-dark">Hitta Oss</h2>
+      <p class="text-gray-600 mb-8">Besök oss eller ring för att boka bord</p>
+      <a href="contact.html" class="inline-block bg-lotus-red text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition">Kontakt & Vägbeskrivning</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-lotus-gold font-semibold text-lg mb-4 md:mb-0">Restaurang Lotus</p>
+        <div class="flex space-x-6">
+          <a href="index.html" class="hover:text-white transition">Hem</a>
+          <a href="menu.html" class="hover:text-white transition">Meny</a>
+          <a href="buffet.html" class="hover:text-white transition">Buffé</a>
+          <a href="contact.html" class="hover:text-white transition">Kontakt</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+        <p>&copy; 2024 Restaurang Lotus. Välkommen!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
