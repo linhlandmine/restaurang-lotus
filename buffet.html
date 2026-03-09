@@ -61,118 +61,106 @@
 
   <!-- Buffet Options -->
   <section class="py-12">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- Lunch Buffé -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-lotus-gold p-6 text-center">
-            <h2 class="text-2xl font-bold text-lotus-dark">Lunch Buffé</h2>
-            <p class="text-lotus-dark opacity-80">Tisdag - Fredag</p>
-            <p class="text-sm text-lotus-dark opacity-70">11:00 - 14:30</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3 mb-6">
-              <div class="flex justify-between">
-                <span>Vuxen</span>
-                <span class="font-bold text-lotus-red">129 kr</span>
+    <div class="max-w-4xl mx-auto px-4">
+      <!-- Combined Lunch & Evening Buffé -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-lotus-red">
+        <div class="bg-lotus-red p-6 text-center text-white">
+          <h2 class="text-3xl font-bold">Buffé</h2>
+          <p class="opacity-90">Lunch & Kväll</p>
+        </div>
+        <div class="p-6">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Lunch -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-lotus-gold rounded-full flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-lotus-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-lotus-dark">Lunch</h3>
+                  <p class="text-sm text-gray-500">Tisdag - Fredag, 11:00 - 14:30</p>
+                </div>
               </div>
-              <div class="flex justify-between">
-                <span>Senior (65+)</span>
-                <span class="font-bold text-lotus-red">109 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (6-12 år)</span>
-                <span class="font-bold text-lotus-red">79 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (under 6)</span>
-                <span class="font-bold text-green-600">Gratis</span>
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span>Vuxen</span>
+                  <span class="font-bold text-lotus-red">129 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Senior (65+)</span>
+                  <span class="font-bold text-lotus-red">109 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Barn (6-12 år)</span>
+                  <span class="font-bold text-lotus-red">79 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Barn (under 6)</span>
+                  <span class="font-bold text-green-600">Gratis</span>
+                </div>
               </div>
             </div>
-            <div class="border-t pt-4">
-              <h3 class="font-semibold mb-2">Ingår:</h3>
-              <ul class="text-sm text-gray-600 space-y-1">
-                <li>• Dagens soppa</li>
-                <li>• Salladsbord</li>
-                <li>• 15+ varma rätter</li>
-                <li>• Ris & nudlar</li>
-                <li>• Läsk</li>
-                <li>• Kaffe/te</li>
-                <li>• Dessert</li>
-              </ul>
+            <!-- Evening -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-lotus-dark rounded-full flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-lotus-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-lotus-dark">Kväll</h3>
+                  <p class="text-sm text-gray-500">Tisdag - Söndag, från 17:00</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span>Vuxen</span>
+                  <span class="font-bold text-lotus-red">199 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Senior (65+)</span>
+                  <span class="font-bold text-lotus-red">169 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Barn (6-12 år)</span>
+                  <span class="font-bold text-lotus-red">119 kr</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Barn (under 6)</span>
+                  <span class="font-bold text-green-600">Gratis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- What's included -->
+          <div class="border-t mt-6 pt-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-2">Lunch ingår:</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• Dagens soppa</li>
+                  <li>• Salladsbord</li>
+                  <li>• 15+ varma rätter</li>
+                  <li>• Ris & nudlar</li>
+                  <li>• Läsk, kaffe/te</li>
+                  <li>• Dessert</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Kväll - allt ovan plus:</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• Premium skaldjur</li>
+                  <li>• Sushi & sashimi</li>
+                  <li>• Utökat dessertbord</li>
+                  <li>• Specialrätter</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Evening Buffé -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-lotus-red">
-          <div class="bg-lotus-red p-6 text-center text-white">
-            <span class="bg-lotus-gold text-lotus-dark text-xs font-bold px-3 py-1 rounded-full">POPULÄR</span>
-            <h2 class="text-2xl font-bold mt-2">Kvälls Buffé</h2>
-            <p class="opacity-90">Tisdag - Söndag</p>
-            <p class="text-sm opacity-80">Från 17:00</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3 mb-6">
-              <div class="flex justify-between">
-                <span>Vuxen</span>
-                <span class="font-bold text-lotus-red">199 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Senior (65+)</span>
-                <span class="font-bold text-lotus-red">169 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (6-12 år)</span>
-                <span class="font-bold text-lotus-red">119 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (under 6)</span>
-                <span class="font-bold text-green-600">Gratis</span>
-              </div>
-            </div>
-            <div class="border-t pt-4">
-              <h3 class="font-semibold mb-2">Allt från lunchbuffén, plus:</h3>
-              <ul class="text-sm text-gray-600 space-y-1">
-                <li>• Premium skaldjur</li>
-                <li>• Sushi & sashimi</li>
-                <li>• Utökat dessertbord</li>
-                <li>• Specialrätter</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Weekend Buffé -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-lotus-dark p-6 text-center text-white">
-            <h2 class="text-2xl font-bold">Helg Buffé</h2>
-            <p class="opacity-90">Lördag - Söndag</p>
-            <p class="text-sm opacity-80">12:00 - 16:00</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3 mb-6">
-              <div class="flex justify-between">
-                <span>Vuxen</span>
-                <span class="font-bold text-lotus-red">159 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (6-12 år)</span>
-                <span class="font-bold text-lotus-red">99 kr</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Barn (under 6)</span>
-                <span class="font-bold text-green-600">Gratis</span>
-              </div>
-            </div>
-            <div class="border-t pt-4">
-              <h3 class="font-semibold mb-2">Perfekt för familjen</h3>
-              <p class="text-sm text-gray-600">Kombinerar lunchens utbud med extra helgrätter</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
