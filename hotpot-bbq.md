@@ -103,4 +103,4 @@ Hotpot & BBQ tables are limited. We recommend booking in advance, especially for
 
 *Time limit: 2 hours per seating. Prices are examples - update with your actual prices.*
 
-[Back to Home](index.md)
+[Back to Home](/)

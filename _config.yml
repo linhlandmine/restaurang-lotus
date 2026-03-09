@@ -1,12 +1,12 @@
 title: Restaurang Lotus
-description: Authentic Asian cuisine - Buffé, Hotpot, BBQ & Takeaway
+description: Autentisk asiatisk mat - Buffé, Hotpot, BBQ & Takeaway i Sverige
 baseurl: ""
 url: "https://yourusername.github.io/restaurang-lotus"
 
-# Theme
-remote_theme: pages-themes/minimal@v0.2.0
+# Plugins
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Navigation
 header_pages:
@@ -16,5 +16,17 @@ header_pages:
   - hotpot-bbq.md
   - contact.md
 
-# Site settings
-show_downloads: false
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# SEO
+lang: sv
+locale: sv_SE
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

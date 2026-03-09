@@ -93,4 +93,4 @@ Order by phone or visit us to pick up your food.
 
 *Prices are examples - update with your actual menu and prices*
 
-[Back to Home](index.md)
+[Back to Home](/)

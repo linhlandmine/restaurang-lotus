@@ -95,4 +95,4 @@ Experience our generous Asian buffet with a wide variety of freshly prepared dis
 
 *Menu varies daily. Prices are examples - update with your actual prices.*
 
-[Back to Home](index.md)
+[Back to Home](/)

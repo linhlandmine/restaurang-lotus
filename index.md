@@ -14,22 +14,22 @@ title: Home
 ### Lunch Buffé
 Enjoy our generous lunch buffet with a wide selection of Asian dishes. Fresh, flavorful, and satisfying.
 
-[View Buffet Menu](buffet.md)
+[View Buffet Menu](/buffet)
 
 ### Evening Buffé
 An expanded selection for dinner with even more choices and premium dishes.
 
-[View Buffet Menu](buffet.md)
+[View Buffet Menu](/buffet)
 
 ### Hotpot & BBQ
 Experience interactive dining at its finest. Cook your own selection of fresh meats, seafood, and vegetables at your table.
 
-[Learn More](hotpot-bbq.md)
+[Learn More](/hotpot-bbq)
 
 ### Takeaway
 Can't stay? Take our delicious food home with you.
 
-[View Takeaway Menu](menu.md)
+[View Takeaway Menu](/menu)
 
 ---
 
@@ -56,4 +56,4 @@ Can't stay? Take our delicious food home with you.
 **Phone:** [Your Phone Number]
 **Email:** [your@email.com]
 
-[Contact & Directions](contact.md)
+[Contact & Directions](/contact)
